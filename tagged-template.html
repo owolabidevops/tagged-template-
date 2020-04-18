@@ -1,0 +1,27 @@
+<html>
+<body>
+    <div class ="bio">
+    </div>
+<script>
+   
+const dict={
+    html:'Hyper Text Markup Language',
+    Css:'cascading Style sheets',
+    Js:'javascript'
+};
+
+
+ const first='wes';
+ const last='bos';
+ const sententce=`hello  my name is ${first} ${last} and I
+ love to code  ${'html'} , ${'Css'} and ${'Js'} ` ;
+ //want to create a paragragh element
+ const bio= document.querySelector('.bio');
+ const p= document.createElement('p');
+
+ p.innerHTML=sententce;
+ bio.appendChild(p);
+
+</script>
+</body>
+</html>
